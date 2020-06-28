@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+  background-color: #edeef0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+nav ul li {
+  margin: 0 20px;
+}
+
+.logotext {
+  font-size: 3em;
+  font-weight: 700;
+  color: #f05136;
+}
+
+.nav-link {
+  font-size: 1.8em;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #f05136;
+}
+
+header div p {
+  font-size: 2.5em;
+  font-weight: 200;
+}
+
+h1,
+h3,
+h4 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 4em;
+}
+h3 {
+  font-size: 2.5em;
+}
+h4 {
+  font-size: 1.8em;
+}
+
+.link-button {
+  text-decoration: none;
+  text-align: center;
+  background-color: #f05136;
+  cursor: pointer;
+  font-weight: 100;
+  color: white;
+  font-size: 1.8em;
+  padding: 10px;
+  border-radius: 5%;
+}
+.link-button:hover {
+  color: white;
+}
+
+#home {
+  color: white;
+  background-color: black;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+#bio {
+  display: flex;
+  align-items: center;
+}
+#bio article * {
+  margin: 20px;
+}
+.break {
+  display: block;
+}
+#bio img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 100px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+#portfolio {
+  color: white;
+  background: url(https://i1.faceprep.in/ProGrad/portfolio-background.svg);
+  background-color: black;
+  text-align: center;
+}
+#portfolio > div {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#portfolio img {
+  padding: 10px;
+}
+#portfolio p {
+  padding: 10px;
+}
+#portfolio h3 {
+  padding-top: 40px;
+}
+hr {
+  width: 400px;
+  margin: 20px 400px;
+  padding: 0px;
+}
+.projects {
+  /* border: 1px solid black; */
+  background: white;
+  color: black;
+  height: 175px;
+  width: 250px;
+  margin: 70px;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+#skills > div {
+  display: flex;
+  /* flex-direction: flex-start; */
+  justify-content: flex-start;
+  padding: 20px;
+}
+.skills-pad {
+  padding: 10px;
+  margin: 0px 60px;
+  list-style: none;
+  /* text-decoration: none; */
+}
+#skills h3 {
+  text-align: center;
+  padding: 25px;
+}
+#skills h4 {
+  text-align: center;
+}
+.skills-pad li {
+  padding: 3px;
+}
+progress[value] {
+  height: 10px;
+  width: 350px;
+  -webkit-appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: grey;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25 inset);
+}
+
+::-webkit-progress-value {
+  background-color: #f05136;
+}
+
+#skills ul {
+  font-size: 1.5em;
+}
+
+#contact {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+#contact > form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 33%;
+}
+input {
+  line-height: 2em;
+  width: 350px;
+  border-radius: 3px;
+  border-color: black;
+  margin: 20px;
+}
+#contact .link-button {
+  width: 140px;
+  height: 50px;
+  margin-left: 33%;
+  padding: 2px;
+}
+/* Dont repeat yourself */
