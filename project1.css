@@ -7,16 +7,42 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 10px;
   background-color: #edeef0;
+  overflow: hidden;
 }
-nav ul {
+
+.burger {
+  display: none;
+}
+.burger div {
+  background-color: black;
+  height: 2px;
+  width: 25px;
+
+  margin: 5px;
+}
+.navbar_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 10px;
 }
+.navbar_container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+/* nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+} */
 nav ul li {
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 .logotext {
@@ -211,3 +237,50 @@ input {
   padding: 2px;
 }
 /* Dont repeat yourself */
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  .navLinks {
+    position: absolute;
+    right: 0;
+    top: 08vh;
+    height: 92vh;
+    background-color: #edeef0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
+  .nav_click {
+    transform: translateX(0%);
+  }
+
+  .navbar_container li a {
+    opacity: 0;
+  }
+}
+
+.burger-clicked #line1 {
+  transform: rotate(45deg) translate(5px);
+}
+
+.burger-clicked #line2 {
+  display: none;
+}
+
+.burger-clicked #line3 {
+  transform: rotate(-45deg) translate(5px);
+}
+
+@keyframes navlinkAnimations {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
